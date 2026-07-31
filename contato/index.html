@@ -64,15 +64,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <div>
           <label for="email">Email *</label>
-          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+          <div class="email-field">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12H2z"/></svg>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+          </div>
         </div>
         <div>
-          <label for="mensagem">Sua Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre o seu negócio..."></textarea>
+          <label for="mensagem">Sua Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Conte rapidamente sobre o seu negócio ou sua dúvida"></textarea>
         </div>
         <!-- honeypot anti-spam (campo invisível, bots costumam preencher) -->
         <input type="text" name="empresa_site" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;opacity:0;height:0;">
-        <button type="submit" class="btn-cta">Enviar mensagem para a Trinca Pay</button>
+        <button type="submit" class="btn-submit">Enviar mensagem para a Trinca Pay</button>
         <p id="form-status" role="status" style="text-align:center; font-size:0.9rem; min-height:1.2em;"></p>
       </form>
 

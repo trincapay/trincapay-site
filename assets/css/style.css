@@ -392,26 +392,50 @@ section { padding: 80px 0; }
   gap: 18px;
 }
 .contact-form label {
-  font-weight: 600;
-  font-size: 0.9rem;
+  font-weight: 500;
+  font-size: 14px;
+  color: #2C3345;
   margin-bottom: 6px;
   display: block;
 }
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 14px 16px;
-  border-radius: 10px;
-  border: 1px solid #cfd9de;
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ACACAC;
   font-family: var(--font-body);
   font-size: 1rem;
 }
+.contact-form .email-field { position: relative; }
+.contact-form .email-field input { padding-left: 36px; }
+.contact-form .email-field svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #8C8C8C;
+  pointer-events: none;
+}
 .contact-form textarea { min-height: 140px; resize: vertical; }
-.contact-form button {
-  align-self: center;
+.btn-submit {
+  align-self: stretch;
+  width: 100%;
   margin-top: 8px;
   border: none;
+  border-radius: 5px;
+  background: #042B4E;
+  color: #fff;
+  padding: 9px 50px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.15s ease;
 }
+.btn-submit:hover { background: #06355f; }
 
 /* ============ Influencer landing ============ */
 .offer-badge {
