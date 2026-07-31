@@ -414,15 +414,8 @@ section { padding: 80px 0; }
 .benefit-list li::before { content: "✓ "; color: var(--color-accent); font-weight: 700; }
 
 /* ============ Mobile nav ============ */
-@media (max-width: 720px) {
-  .site-header .container { flex-wrap: wrap; row-gap: 10px; padding-top: 12px; padding-bottom: 12px; }
-  .site-header nav { flex-wrap: wrap; gap: 12px 16px; }
-  .site-header nav a.nav-link { font-size: 0.85rem; }
-  .btn-area-cliente { padding: 8px 14px; font-size: 0.75rem; }
-  .site-header .logo-link img { width: 150px; }
-}
-@media (max-width: 480px) {
-  .site-header .container { justify-content: flex-start; }
-  .site-header nav { width: 100%; justify-content: flex-start; }
-  .btn-area-cliente { order: 3; margin-top: 4px; }
-}
+/* Replica o comportamento real da produção: nada encolhe (logo e fontes
+   mantêm o tamanho normal); quando o espaço não é suficiente, o próprio
+   nav quebra e o botão "ÁREA DO CLIENTE" cai para uma segunda linha,
+   alinhado à direita, por volta de ~500-520px de largura. */
+.site-header nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
