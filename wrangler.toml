@@ -1,0 +1,10 @@
+name = "trincapay-site"
+pages_build_output_dir = "."
+compatibility_date = "2026-07-31"
+
+# Nota: o domínio trincapay.com.br já tem MX records ativos apontando para a Umbler
+# (e-mail de negócio em uso: falecom@, suporte@, etc). Por isso NÃO usamos o
+# Cloudflare Email Routing/Email Service aqui (exigiria trocar os MX records e
+# quebraria o e-mail atual). O envio do formulário de contato usa a Resend
+# (serviço externo, via API key), que não interfere nos MX records existentes.
+# Veja functions/api/contact.js para a configuração de envio.

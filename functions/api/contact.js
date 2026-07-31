@@ -1,14 +1,19 @@
 // Cloudflare Pages Function — POST /api/contact
 //
-// Isso É um Cloudflare Worker: no Cloudflare Pages, qualquer arquivo dentro de
+// Isso é um Cloudflare Worker: no Cloudflare Pages, qualquer arquivo dentro de
 // /functions vira automaticamente uma função serverless (Worker) hospedada
 // junto com o site estático, sem precisar de um projeto Workers separado nem
 // configurar rotas manualmente. Basta o deploy do Pages já publicar este
 // endpoint em https://SEU-DOMINIO/api/contact.
 //
+// Envio de e-mail via Resend (https://resend.com). Não usamos o Cloudflare
+// Email Routing/Email Service porque o domínio trincapay.com.br já tem
+// registros MX ativos apontando para a Umbler (e-mail de negócio em uso:
+// falecom@, suporte@, etc) — trocar os MX quebraria esse e-mail existente.
+//
 // Configuração necessária no painel do Cloudflare Pages (Settings > Environment variables):
-//   RESEND_API_KEY  -> chave de API da Resend (https://resend.com), usada para enviar o e-mail.
-//   TO_EMAIL         (opcional) -> e-mail de destino. Padrão: falecom@trincapay.com.br
+//   RESEND_API_KEY  -> chave de API da Resend, usada para enviar o e-mail.
+//   TO_EMAIL         (opcional) -> e-mail de destino. Padrão: trincapayadm@gmail.com
 //   FROM_EMAIL       (opcional) -> remetente verificado na Resend. Padrão: contato@trincapay.com.br
 //
 // Sem a RESEND_API_KEY configurada, o endpoint responde 500 com uma mensagem
@@ -42,7 +47,7 @@ export async function onRequestPost(context) {
     return json({ error: 'Envio de e-mail não configurado (RESEND_API_KEY ausente).' }, 500);
   }
 
-  const toEmail = env.TO_EMAIL || 'falecom@trincapay.com.br';
+  const toEmail = env.TO_EMAIL || 'trincapayadm@gmail.com';
   const fromEmail = env.FROM_EMAIL || 'Site Trinca Pay <contato@trincapay.com.br>';
 
   const emailHtml = `
