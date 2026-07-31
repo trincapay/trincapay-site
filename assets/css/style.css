@@ -15,6 +15,8 @@
   --color-text-on-dark: #ffffff;
   --color-text-on-light: #335063; /* corpo de texto e headings sobre fundo claro */
   --color-alt-bg: #f2f7f5;        /* seções claras alternadas (leve tom esverdeado) */
+  --color-text-alt-dark: #042B4E; /* azul escuro alternativo usado em FAQ, CTA final e alguns parágrafos */
+  --color-off-white: #EFF4F0;     /* branco levemente acinzentado usado em links secundários do hero */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Raleway', sans-serif;
   --radius-pill: 100px;
@@ -52,9 +54,9 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
-h1 { font-weight: 700; font-size: clamp(2rem, 4.5vw, 3.15rem); }
-h2 { font-weight: 400; font-size: clamp(1.5rem, 3vw, 2.25rem); }
-h3 { font-weight: 600; font-size: clamp(1.15rem, 2vw, 1.5rem); }
+h1 { font-weight: 700; font-size: 40px; line-height: 1.3; }
+h2 { font-weight: 600; font-size: 35px; line-height: 1.3; }
+h3 { font-weight: 700; font-size: 21px; line-height: 1.3; }
 
 p { margin: 0 0 18px; font-size: 1rem; }
 
@@ -419,3 +421,64 @@ section { padding: 80px 0; }
    nav quebra e o botão "ÁREA DO CLIENTE" cai para uma segunda linha,
    alinhado à direita, por volta de ~500-520px de largura. */
 .site-header nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
+
+/* =========================================================
+   HOME — valores tipográficos exatos extraídos da produção
+   (font-size, font-weight, color, line-height computados
+   diretamente em trincapay.com.br). Seções mapeadas por ordem
+   dentro de <main> (nth-of-type), escopadas a body.page-home.
+   ========================================================= */
+
+/* 1) HERO */
+.page-home main > section:nth-of-type(1) h1 { font-size: 40px; font-weight: 700; color: #fff; line-height: 52px; }
+.page-home main > section:nth-of-type(1) .hero-subtitle { font-size: 18px; font-weight: 400; color: var(--color-accent); line-height: 23.4px; }
+.page-home main > section:nth-of-type(1) p { font-size: 20px; font-weight: 400; color: #fff; line-height: 30px; }
+.page-home main > section:nth-of-type(1) .hero-eyebrow-link { font-size: 16px; font-weight: 400; color: var(--color-off-white); line-height: 20.8px; }
+
+/* 2) O PROBLEMA */
+.page-home main > section:nth-of-type(2) h2 { font-size: 30px; font-weight: 600; color: var(--color-text-on-light); line-height: 39px; }
+.page-home main > section:nth-of-type(2) p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 24px; }
+
+/* 3) A REGRA + CARDS + COMO FUNCIONA */
+.page-home main > section:nth-of-type(3) > .container > h2:first-child { font-size: 35px; font-weight: 600; color: var(--color-text-on-light); line-height: 45.5px; }
+.page-home main > section:nth-of-type(3) > .container > p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
+.page-home main > section:nth-of-type(3) .feature-card h3 { font-size: 21px; font-weight: 700; color: #fff; line-height: 27.3px; }
+.page-home main > section:nth-of-type(3) .feature-card p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
+.page-home main > section:nth-of-type(3) h2[style*="margin-top"] { font-size: 35px; font-weight: 600; color: #fff; line-height: 45.5px; }
+.page-home main > section:nth-of-type(3) .step-list + p,
+.page-home main > section:nth-of-type(3) > .container > h2[style*="margin-top"] ~ p { font-size: 18px; font-weight: 500; color: #fff; line-height: 27px; }
+.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 400; color: #fff; line-height: 55.2px; }
+.page-home main > section:nth-of-type(3) .step-row h3 { font-size: 21px; font-weight: 600; color: var(--color-text-on-light); line-height: 27.3px; }
+.page-home main > section:nth-of-type(3) .step-row p { font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; }
+.page-home main > section:nth-of-type(3) p[style*="margin-top:32px"] { font-size: 18px; font-weight: 400; color: var(--color-text-on-light); line-height: 23.4px; }
+
+/* 4) PARA QUEM */
+.page-home main > section:nth-of-type(4) > .container.text-center > h2 { font-size: 35px; font-weight: 700; color: var(--color-text-on-light); line-height: 45.5px; }
+.page-home main > section:nth-of-type(4) > .container.text-center > p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(4) .audience-row h3 { font-size: 19px; font-weight: 400; color: var(--color-text-on-light); line-height: 24.7px; }
+.page-home main > section:nth-of-type(4) .audience-row .segment-line { font-size: 16px; font-weight: 500; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(4) .audience-row p:not(.segment-line) { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+
+/* 5) O QUE MUDA */
+.page-home main > section:nth-of-type(5) h2 { font-size: 30px; font-weight: 400; color: var(--color-text-on-light); line-height: 39px; }
+.page-home main > section:nth-of-type(5) > .container > p:first-of-type { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(5) .feature-card h3 { font-size: 22px; font-weight: 700; color: var(--color-accent); line-height: 28.6px; }
+.page-home main > section:nth-of-type(5) .feature-card p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
+
+/* 7) FUNDADOR */
+.page-home main > section:nth-of-type(7) h2 { font-size: 30px; font-weight: 700; color: #fff; line-height: 39px; }
+.page-home main > section:nth-of-type(7) p { font-size: 18px; font-weight: 400; color: #fff; line-height: 27px; }
+
+/* 8) FAQ */
+.page-home main > section:nth-of-type(8) > .container.text-center > h2 { font-size: 40px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 52px; }
+.page-home main > section:nth-of-type(8) .faq-item summary { font-size: 21.06px; font-weight: 500; color: var(--color-text-alt-dark); line-height: 31.59px; }
+.page-home main > section:nth-of-type(8) .faq-item p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 20.8px; }
+
+/* 9) CTA FINAL */
+.page-home main > section:nth-of-type(9) h2 { font-size: 54px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 70.2px; }
+.page-home main > section:nth-of-type(9) p { font-size: 18px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 27px; }
+
+/* FOOTER (todas as páginas) */
+.site-footer .footer-desc { font-size: 13px; font-weight: 400; color: #fff; line-height: 16.9px; }
+.site-footer h4 { font-size: 13px; font-weight: 600; color: var(--color-accent); line-height: 16.9px; }
+.footer-legal { font-size: 14px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 18.2px; }
