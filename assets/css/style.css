@@ -126,27 +126,42 @@ p { margin: 0 0 18px; font-size: 1rem; }
 }
 .site-header nav a.nav-link {
   color: var(--color-white);
-  font-weight: 500;
-  font-size: 0.95rem;
+  font-weight: 400;
+  font-size: 16px;
 }
 .site-header nav a.nav-link:hover { color: var(--color-accent); }
 .btn-area-cliente {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid rgba(255,255,255,0.4);
-  background: rgba(255,255,255,0.06);
-  color: var(--color-white);
-  padding: 10px 22px;
+  border: 1px solid #fff;
+  background: rgb(116, 152, 176);
+  color: #fff;
+  padding: 12px 18px;
   border-radius: var(--radius-pill);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
+  font-size: 16px;
+  font-weight: 400;
   white-space: nowrap;
 }
-.btn-area-cliente:hover { background: rgba(255,255,255,0.16); }
+.btn-area-cliente:hover { background: rgb(100, 136, 160); }
+.btn-area-cliente::before {
+  content: "\1F464";
+  color: var(--color-accent);
+  font-size: 0.85em;
+}
 
-.nav-toggle { display: none; }
+/* ============ Hamburger (mobile nav toggle, checkbox hack, sem JS) ============ */
+.nav-toggle-checkbox { display: none; }
+.nav-toggle-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent);
+  font-size: 28px;
+  cursor: pointer;
+  line-height: 1;
+  user-select: none;
+}
 
 /* ============ Buttons / CTAs ============ */
 .btn-cta {
@@ -199,8 +214,8 @@ section { padding: 80px 0; }
   padding: 64px 0 72px;
 }
 .hero .grid-2 { align-items: center; }
-.hero .grid-2 img { max-width: 366px; margin: 0 auto; }
-.problema-img img { max-width: 471px; margin: 0 auto; }
+.hero .grid-2 img { max-width: min(366px, 100%); margin: 0 auto; }
+.problema-img img { max-width: min(471px, 100%); margin: 0 auto; }
 .hero-subtitle { color: var(--color-accent); font-weight: 400; }
 .hero-eyebrow-link {
   display: inline-block;
@@ -256,7 +271,7 @@ section { padding: 80px 0; }
 .audience-row {
   padding: 64px 0;
 }
-.audience-row .photo-strip img { border-radius: var(--radius-card); max-width: 400px; margin: 0 auto; }
+.audience-row .photo-strip img { border-radius: var(--radius-card); max-width: min(400px, 100%); margin: 0 auto; }
 .accent-link { color: var(--color-accent); font-weight: 600; }
 .accent-link:hover { text-decoration: underline; }
 .audience-row .segment-line { font-style: italic; font-weight: 600; }
@@ -273,7 +288,7 @@ section { padding: 80px 0; }
   border: 6px solid rgba(255,255,255,0.15);
   border-radius: var(--radius-card);
   overflow: hidden;
-  max-width: 476px;
+  max-width: min(476px, 100%);
   margin: 0 auto;
 }
 
@@ -416,11 +431,49 @@ section { padding: 80px 0; }
 .benefit-list li::before { content: "✓ "; color: var(--color-accent); font-weight: 700; }
 
 /* ============ Mobile nav ============ */
-/* Replica o comportamento real da produção: nada encolhe (logo e fontes
-   mantêm o tamanho normal); quando o espaço não é suficiente, o próprio
-   nav quebra e o botão "ÁREA DO CLIENTE" cai para uma segunda linha,
-   alinhado à direita, por volta de ~500-520px de largura. */
-.site-header nav { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
+/* Entre ~481-720px: nada encolhe; o container quebra e o botão
+   "ÁREA DO CLIENTE" cai para uma 2ª linha, alinhado à direita. */
+@media (max-width: 720px) {
+  .site-header .container { flex-wrap: wrap; justify-content: flex-end; row-gap: 10px; }
+  .site-header .logo-link { margin-right: auto; }
+}
+
+/* Abaixo de 480px: menu vira hambúrguer real (igual produção), e o botão
+   "ÁREA DO CLIENTE" fica centralizado abaixo do header, em linha própria. */
+@media (max-width: 480px) {
+  .site-header .container { justify-content: space-between; }
+  .nav-toggle-btn { display: flex; order: 2; }
+  .site-header nav.nav-links {
+    display: none;
+    order: 4;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .nav-toggle-checkbox:checked ~ nav.nav-links { display: flex; }
+  .btn-area-cliente { order: 3; width: 100%; justify-content: center; margin: 0 auto; }
+}
+
+/* =========================================================
+   MOBILE (≤480px) — tamanhos exatos extraídos da produção,
+   sobrepondo os valores fixos de desktop definidos acima.
+   ========================================================= */
+@media (max-width: 480px) {
+  h1 { font-size: 26px !important; line-height: 1.35 !important; }
+  h2 { font-size: 22px !important; line-height: 1.35 !important; }
+  h3 { font-size: 18px !important; line-height: 1.35 !important; }
+  p { font-size: 16px !important; line-height: 1.5 !important; }
+  .hero-subtitle { font-size: 14px !important; line-height: 1.4 !important; }
+  .step-row .step-num { font-size: 18px !important; line-height: 1.4 !important; }
+  .faq-item summary { font-size: 16px !important; line-height: 1.4 !important; }
+  section { padding: 40px 0 !important; }
+  .hero { padding: 40px 0 48px !important; }
+  .card-grid-3 { gap: 16px !important; }
+  .feature-card { padding: 20px 18px !important; }
+  .step-row { grid-template-columns: 1fr !important; gap: 6px !important; padding: 18px 0 !important; }
+  .site-footer { padding: 28px 20px !important; }
+}
 
 /* =========================================================
    HOME — valores tipográficos exatos extraídos da produção
