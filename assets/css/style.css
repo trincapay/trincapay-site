@@ -473,6 +473,14 @@ section { padding: 80px 0; }
   .feature-card { padding: 20px 18px !important; }
   .step-row { grid-template-columns: 1fr !important; gap: 6px !important; padding: 18px 0 !important; }
   .site-footer { padding: 28px 20px !important; }
+
+  /* Imagens: produção limita a ALTURA no mobile (não deixa esticar),
+     valores extraídos direto das media queries de trincapay.com.br. */
+  .hero .grid-2 img { width: auto !important; max-width: 100% !important; height: 300px !important; margin: 0 auto !important; }
+  .problema-img img { width: 344px !important; max-width: 100% !important; height: 258px !important; margin: 0 auto !important; }
+  .audience-row .photo-strip img { max-width: min(300px, 100%) !important; width: 100% !important; height: auto !important; margin: 0 auto !important; }
+  .founder-photo { max-width: min(300px, 100%) !important; }
+  .founder-photo img { height: auto !important; }
 }
 
 /* =========================================================
