@@ -109,7 +109,8 @@ p { margin: 0 0 18px; font-size: 1rem; }
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 32px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
@@ -117,6 +118,7 @@ p { margin: 0 0 18px; font-size: 1rem; }
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-right: auto;
 }
 .site-header .logo-link img { width: 200px; height: auto; }
 .site-header nav {
