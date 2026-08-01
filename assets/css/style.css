@@ -211,11 +211,11 @@ section { padding: 80px 0; }
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 56px;
+  gap: 80px;
   align-items: center;
 }
 @media (max-width: 860px) {
-  .grid-2 { grid-template-columns: 1fr; gap: 32px; }
+  .grid-2 { grid-template-columns: 1fr; gap: 48px; }
   .grid-2.reverse-mobile { display: flex; flex-direction: column-reverse; }
 }
 
