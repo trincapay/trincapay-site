@@ -621,6 +621,7 @@ section { padding: 80px 0; }
   .feature-card { padding: 20px 18px !important; }
   .step-row { grid-template-columns: 1fr !important; gap: 6px !important; padding: 18px 0 !important; }
   .site-footer { padding: 28px 20px !important; }
+  .footer-legal { font-size: 12px !important; line-height: 1.4 !important; padding-top: 10px !important; padding-bottom: 10px !important; }
 
   /* Imagens: produção limita a ALTURA no mobile (não deixa esticar),
      valores extraídos direto das media queries de trincapay.com.br. */
