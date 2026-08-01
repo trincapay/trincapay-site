@@ -72,10 +72,15 @@ p { margin: 0 0 18px; font-size: 1rem; }
   position: relative;
   overflow: hidden;
 }
+.wave-bg > * {
+  position: relative;
+  z-index: 1;
+}
 .wave-bg::before {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
   pointer-events: none;
   background-image: repeating-linear-gradient(
       100deg,
