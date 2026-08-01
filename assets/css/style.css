@@ -303,6 +303,7 @@ section { padding: 80px 0; }
   font-weight: 600;
   font-size: 15px;
 }
+.benefit-pill-blue { background: var(--color-bg-panel-blue); color: #fff; }
 .benefit-pill .check-icon {
   display: flex;
   align-items: center;
