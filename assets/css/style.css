@@ -11,7 +11,7 @@
 :root {
   --color-bg-dark: #335063;       /* fundo petróleo - header, hero, seções escuras */
   --color-bg-dark-card: #4a6d84;  /* cartões sobre fundo escuro (levemente mais claro) */
-  --color-bg-panel-blue: rgb(116, 152, 176); /* azul claro da seção "A regra..." (igual produção) */
+  --color-bg-panel-blue: rgb(88, 116, 135); /* azul-acinzentado escurecido (contraste AA p/ texto branco: 4.93:1) */
   --color-accent: #4FEC69;        /* verde destaque - títulos, botões, fundos */
   --color-accent-text: #117A37;   /* verde escurecido para texto/links sobre fundo claro (contraste AA) */
   --color-white: #ffffff;
