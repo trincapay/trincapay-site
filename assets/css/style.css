@@ -543,45 +543,48 @@ section { padding: 80px 0; }
 .page-home main > section:nth-of-type(2) p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 24px; }
 
 /* 3) A REGRA + CARDS + COMO FUNCIONA */
+/* 3) A REGRA + CARDS (fundo cinza claro) */
 .page-home main > section:nth-of-type(3) > .container > h2:first-child { font-size: 35px; font-weight: 600; color: var(--color-text-on-light); line-height: 45.5px; }
 .page-home main > section:nth-of-type(3) > .container > p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
 .page-home main > section:nth-of-type(3) .feature-card { background: #fff; box-shadow: 0 4px 16px rgba(51,80,99,0.08); }
 .page-home main > section:nth-of-type(3) .feature-card h3 { font-size: 21px; font-weight: 700; color: var(--color-text-on-light); line-height: 27.3px; }
 .page-home main > section:nth-of-type(3) .feature-card p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
-.page-home main > section:nth-of-type(3) h2[style*="margin-top"] { font-size: 35px; font-weight: 600; color: var(--color-text-on-light); line-height: 45.5px; }
-.page-home main > section:nth-of-type(3) .step-list + p,
-.page-home main > section:nth-of-type(3) > .container > h2[style*="margin-top"] ~ p { font-size: 18px; font-weight: 500; color: var(--color-text-on-light); line-height: 27px; }
-.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 700; color: var(--color-text-on-light); line-height: 55.2px; }
-.page-home main > section:nth-of-type(3) .step-row h3 { font-size: 21px; font-weight: 600; color: var(--color-text-on-light); line-height: 27.3px; }
-.page-home main > section:nth-of-type(3) .step-row p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 24px; }
-.page-home main > section:nth-of-type(3) .step-row { border-bottom-color: rgba(51,80,99,0.2); }
-.page-home main > section:nth-of-type(3) p[style*="margin-top:32px"] { font-size: 18px; font-weight: 400; color: var(--color-text-on-light); line-height: 23.4px; }
+
+/* 4) COMO FUNCIONA + STEPS (fundo azul escuro, igual antes) */
+.page-home main > section:nth-of-type(4) > .container > h2 { font-size: 35px; font-weight: 600; color: #fff; line-height: 45.5px; }
+.page-home main > section:nth-of-type(4) .step-list + p,
+.page-home main > section:nth-of-type(4) > .container > h2 ~ p { font-size: 18px; font-weight: 500; color: #fff; line-height: 27px; }
+.page-home main > section:nth-of-type(4) .step-row .step-num { font-size: 24px; font-weight: 700; color: #fff; line-height: 55.2px; }
+.page-home main > section:nth-of-type(4) .step-row h3 { font-size: 21px; font-weight: 600; color: #fff; line-height: 27.3px; }
+.page-home main > section:nth-of-type(4) .step-row p { font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; }
+.page-home main > section:nth-of-type(4) .step-row { border-bottom-color: rgba(255,255,255,1); }
+.page-home main > section:nth-of-type(4) p[style*="margin-top:32px"] { font-size: 18px; font-weight: 400; color: #fff; line-height: 23.4px; }
 
 /* 4) PARA QUEM */
-.page-home main > section:nth-of-type(4) > .container.text-center > h2 { font-size: 35px; font-weight: 700; color: var(--color-text-on-light); line-height: 45.5px; }
-.page-home main > section:nth-of-type(4) > .container.text-center > p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
-.page-home main > section:nth-of-type(4) .audience-row h3 { font-size: 19px; font-weight: 400; color: var(--color-text-on-light); line-height: 24.7px; }
-.page-home main > section:nth-of-type(4) .audience-row .segment-line { font-size: 16px; font-weight: 500; color: var(--color-text-on-light); line-height: 20.8px; }
-.page-home main > section:nth-of-type(4) .audience-row p:not(.segment-line) { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(5) > .container.text-center > h2 { font-size: 35px; font-weight: 700; color: var(--color-text-on-light); line-height: 45.5px; }
+.page-home main > section:nth-of-type(5) > .container.text-center > p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(5) .audience-row h3 { font-size: 19px; font-weight: 400; color: var(--color-text-on-light); line-height: 24.7px; }
+.page-home main > section:nth-of-type(5) .audience-row .segment-line { font-size: 16px; font-weight: 500; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(5) .audience-row p:not(.segment-line) { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
 
 /* 5) O QUE MUDA */
-.page-home main > section:nth-of-type(5) h2 { font-size: 30px; font-weight: 400; color: var(--color-text-on-light); line-height: 39px; }
-.page-home main > section:nth-of-type(5) > .container > p:first-of-type { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
-.page-home main > section:nth-of-type(5) .feature-card h3 { font-size: 22px; font-weight: 700; color: var(--color-accent); line-height: 28.6px; }
-.page-home main > section:nth-of-type(5) .feature-card p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
+.page-home main > section:nth-of-type(6) h2 { font-size: 30px; font-weight: 400; color: var(--color-text-on-light); line-height: 39px; }
+.page-home main > section:nth-of-type(6) > .container > p:first-of-type { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(6) .feature-card h3 { font-size: 22px; font-weight: 700; color: var(--color-accent); line-height: 28.6px; }
+.page-home main > section:nth-of-type(6) .feature-card p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
 
 /* 7) FUNDADOR */
-.page-home main > section:nth-of-type(7) h2 { font-size: 30px; font-weight: 700; color: #fff; line-height: 39px; }
-.page-home main > section:nth-of-type(7) p { font-size: 18px; font-weight: 400; color: #fff; line-height: 27px; }
+.page-home main > section:nth-of-type(8) h2 { font-size: 30px; font-weight: 700; color: #fff; line-height: 39px; }
+.page-home main > section:nth-of-type(8) p { font-size: 18px; font-weight: 400; color: #fff; line-height: 27px; }
 
 /* 8) FAQ */
-.page-home main > section:nth-of-type(8) > .container.text-center > h2 { font-size: 30px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 39px; }
-.page-home main > section:nth-of-type(8) .faq-item summary { font-size: 18px; font-weight: 500; color: var(--color-text-alt-dark); line-height: 27px; }
-.page-home main > section:nth-of-type(8) .faq-item p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 20.8px; }
+.page-home main > section:nth-of-type(9) > .container.text-center > h2 { font-size: 30px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 39px; }
+.page-home main > section:nth-of-type(9) .faq-item summary { font-size: 18px; font-weight: 500; color: var(--color-text-alt-dark); line-height: 27px; }
+.page-home main > section:nth-of-type(9) .faq-item p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 20.8px; }
 
 /* 9) CTA FINAL */
-.page-home main > section:nth-of-type(9) h2 { font-size: 36px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 46.8px; }
-.page-home main > section:nth-of-type(9) p { font-size: 18px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 27px; }
+.page-home main > section:nth-of-type(10) h2 { font-size: 36px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 46.8px; }
+.page-home main > section:nth-of-type(10) p { font-size: 18px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 27px; }
 
 /* FOOTER (todas as páginas) */
 .site-footer .footer-desc { font-size: 13px; font-weight: 400; color: #fff; line-height: 16.9px; }
