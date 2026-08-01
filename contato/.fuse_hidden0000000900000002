@@ -44,7 +44,6 @@
 })(window,document,'script','dataLayer','GTM-535Q238L');
 </script>
 <!-- End Google Tag Manager -->
-<script src="/assets/js/analytics-events.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -190,8 +189,6 @@ document.getElementById('contact-form').addEventListener('submit', async functio
     if (res.ok) {
       status.textContent = 'Mensagem enviada! Em breve alguém da Trinca Pay entra em contato.';
       form.reset();
-      window.dataLayer = window.dataLayer || [];
-      window.dataLayer.push({ event: 'form_submit_success', cta_label: 'Formulário de contato', page_path: location.pathname });
     } else {
       status.textContent = 'Não foi possível enviar agora. Tente novamente ou fale pelo WhatsApp acima.';
     }
