@@ -27,3 +27,7 @@ Página de contato direto — formulário para envio de mensagem + CTA para What
 - `whatsapp_click` — botão de atalho do formulário (`cta_location: form_contato`)
 - `phone_click`, `email_click` — rodapé
 - `area_cliente_click` — se presente no rodapé
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, vim pelo site da TrincaPay (página de Contato) e quero falar com vocês." — evento GA4: `whatsapp_float_click`.

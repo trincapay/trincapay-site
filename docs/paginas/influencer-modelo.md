@@ -27,3 +27,7 @@
 ## Nota
 
 Por não estar no sitemap, esta página depende de link direto (compartilhado pelo influencer/parceiro) para receber tráfego — não é pensada para ranquear organicamente.
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, vim pela oferta exclusiva da TrincaPay e quero saber mais sobre a maquininha que paga em 1 dia útil." — evento GA4: `whatsapp_float_click`.

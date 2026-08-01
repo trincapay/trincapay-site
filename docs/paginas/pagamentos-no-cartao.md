@@ -24,3 +24,7 @@ Página de produto/solução — explica como a Trinca Pay estrutura o recebimen
 
 - `whatsapp_click`, `phone_click`, `email_click` — seções/rodapé
 - `area_cliente_click` — rodapé
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, vim pelo site da TrincaPay e quero entender como funcionam os pagamentos no cartão para minha empresa." — evento GA4: `whatsapp_float_click`.

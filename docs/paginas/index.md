@@ -36,3 +36,7 @@ Página principal do site — apresenta a proposta de valor completa da Trinca P
 - `area_cliente_click` — botão "Área do Cliente"
 
 É a única página com CTA de WhatsApp no hero (`cta_location: hero`), as demais têm CTAs distribuídos em seções/rodapé.
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, vim pelo site da TrincaPay e quero entender minha condição de pagamento no cartão." — evento GA4: `whatsapp_float_click`.

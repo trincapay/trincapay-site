@@ -25,3 +25,7 @@ Página de produto — foco na maquininha em si, argumentando que taxa não é o
 
 - `whatsapp_click`, `phone_click`, `email_click` — seções/rodapé
 - `area_cliente_click` — rodapé
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, vim pelo site da TrincaPay e quero saber mais sobre a maquininha Trinca Pay." — evento GA4: `whatsapp_float_click`.

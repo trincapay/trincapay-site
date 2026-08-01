@@ -38,8 +38,9 @@ Site institucional estático da Trinca Pay, reconstruído do zero e colocado em 
 ├── assets/
 │   ├── css/                        → design system compartilhado (cache 1 ano, immutable)
 │   ├── images/                     → imagens .webp (cache 1 ano, immutable)
+│   ├── images/icon-whatsapp-white.svg → ícone do botão flutuante de WhatsApp
 │   └── js/
-│       └── analytics-events.js     → rastreamento de eventos GA4 (cache 1h)
+│       └── analytics-events.js     → rastreamento de eventos GA4 (cache 1h, cache-buster ?v=N manual)
 └── functions/
     └── api/contact.js              → endpoint do formulário de contato (Resend)
 ```
@@ -67,3 +68,5 @@ O domínio `trincapay.com.br` já tinha (e continua tendo) MX records ativos apo
 8. **Cutover de DNS para produção** (site novo foi ao ar em `trincapay.com.br`).
 9. Resubmissão de sitemap e verificação no Google Search Console.
 10. Configuração de rastreamento de eventos de conversão no GTM/GA4 (WhatsApp, telefone, e-mail, área do cliente, formulário de contato).
+11. Documentação completa do projeto salva em `docs/`.
+12. Botão flutuante de WhatsApp (mensagem personalizada por página) + evento GA4 `whatsapp_float_click`.

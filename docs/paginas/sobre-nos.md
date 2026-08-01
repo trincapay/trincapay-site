@@ -25,3 +25,7 @@ Página institucional — conta a origem da empresa e do fundador (Renan Oliveir
 
 - `whatsapp_click`, `phone_click`, `email_click` — rodapé/seções (`cta_location: secao` ou `footer_*`)
 - `area_cliente_click` — rodapé
+
+## Botão flutuante de WhatsApp
+
+Presente também nesta página (canto inferior direito, todas as páginas). Mensagem pré-preenchida específica desta página: "Olá, conheci a TrincaPay pelo site e quero saber mais sobre a empresa e como vocês atuam." — evento GA4: `whatsapp_float_click`.
