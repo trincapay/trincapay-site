@@ -1,0 +1,24 @@
+# Trinca Pay
+
+> A Trinca Pay é uma parceira financeira de empresas que vendem no cartão. Organiza pagamentos no cartão, maquininha, repasse automático e condições de recebimento com clareza, previsibilidade e suporte humano — evitando surpresas no extrato e perda silenciosa de margem.
+
+A Trinca Pay atende empresas que trabalham com parcelamento, comissão entre parceiros/equipes, ticket médio ou alto, e que precisam de previsibilidade no fluxo de caixa. Não é apenas uma maquininha de cartão: é uma estrutura financeira completa que acompanha o negócio antes, durante e depois de cada venda.
+
+## Páginas principais
+
+- [Home](https://trincapay.com.br/): visão geral da proposta da Trinca Pay — condições definidas desde o início, que não pioram com o tempo, e suporte humano via WhatsApp.
+- [Pagamentos no Cartão](https://trincapay.com.br/pagamentos-no-cartao): como a Trinca Pay estrutura o recebimento no cartão para empresas, com condições claras e previsíveis.
+- [Maquininha Trinca Pay](https://trincapay.com.br/maquininha-trinca-pay): a maquininha de cartão da Trinca Pay, pensada para empresas que querem previsibilidade além da taxa.
+- [Repasse Automático](https://trincapay.com.br/repasse-automatico): como funciona o repasse automático de valores entre parceiros, equipes e comissões, sem controles manuais.
+- [Sobre Nós](https://trincapay.com.br/sobre-nos): a história da Trinca Pay e do fundador Renan Oliveira.
+- [Contato](https://trincapay.com.br/contato): formas de falar com a Trinca Pay, incluindo WhatsApp.
+
+## Informações de contato
+
+- WhatsApp: https://wa.me/5511993423755
+- Telefone: (11) 99342-3755
+- E-mail: falecom@trincapay.com.br
+
+## Observações
+
+Todo o conteúdo do site está em português (pt-BR) e é destinado a empresas no Brasil que vendem no cartão de crédito/débito.

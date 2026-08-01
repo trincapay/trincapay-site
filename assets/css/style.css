@@ -5,13 +5,15 @@
    visual direta do site em produção.
    ========================================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+/* Google Fonts agora carregadas via <link rel="preconnect"> + <link rel="stylesheet">
+   no <head> de cada página (em vez de @import), para não bloquear a renderização. */
 
 :root {
   --color-bg-dark: #335063;       /* fundo petróleo - header, hero, seções escuras */
   --color-bg-dark-card: #4a6d84;  /* cartões sobre fundo escuro (levemente mais claro) */
   --color-bg-panel-blue: rgb(116, 152, 176); /* azul claro da seção "A regra..." (igual produção) */
-  --color-accent: #4FEC69;        /* verde destaque - títulos, botões, links */
+  --color-accent: #4FEC69;        /* verde destaque - títulos, botões, fundos */
+  --color-accent-text: #117A37;   /* verde escurecido para texto/links sobre fundo claro (contraste AA) */
   --color-white: #ffffff;
   --color-text-on-dark: #ffffff;
   --color-text-on-light: #335063; /* corpo de texto e headings sobre fundo claro */
@@ -335,7 +337,7 @@ section { padding: 80px 0; }
   .step-row { grid-template-columns: 1fr; gap: 10px; }
 }
 .step-row .step-num { color: var(--color-accent); font-weight: 700; margin-right: 6px; }
-.step-row h3 { margin-bottom: 0; font-size: 1.15rem; }
+.step-row h3, .step-row .step-marker { margin-bottom: 0; font-size: 1.15rem; font-weight: 700; }
 .step-row p { margin: 0; opacity: 0.92; }
 
 /* ============ Alternating image/text rows ("para quem") ============ */
@@ -346,7 +348,7 @@ section { padding: 80px 0; }
   padding: 48px !important;
 }
 .audience-row .photo-strip img { border-radius: var(--radius-card); max-width: min(400px, 100%); margin: 0 auto; }
-.accent-link { color: var(--color-accent); font-weight: 600; }
+.accent-link { color: var(--color-accent-text); font-weight: 600; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .accent-link:hover { text-decoration: underline; }
 .audience-row .segment-line { font-style: italic; font-weight: 600; }
 
@@ -426,7 +428,7 @@ section { padding: 80px 0; }
   font-size: 0.9rem;
   opacity: 0.9;
 }
-.site-footer h4 {
+.site-footer h2 {
   color: var(--color-accent);
   font-family: var(--font-heading);
   font-size: 0.85rem;
@@ -696,5 +698,5 @@ section { padding: 80px 0; }
 
 /* FOOTER (todas as páginas) */
 .site-footer .footer-desc { font-size: 13px; font-weight: 400; color: #fff; line-height: 16.9px; }
-.site-footer h4 { font-size: 13px; font-weight: 600; color: var(--color-accent); line-height: 16.9px; }
+.site-footer h2 { font-size: 13px; font-weight: 600; color: var(--color-accent); line-height: 16.9px; }
 .footer-legal { font-size: 14px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 18.2px; }
