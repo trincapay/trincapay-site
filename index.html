@@ -19,17 +19,29 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap"></noscript>
 <link rel="preconnect" href="https://images.leadconnectorhq.com">
 <link rel="icon" type="image/webp" href="/favicon.webp">
 <link rel="stylesheet" href="/assets/css/style.css?v=3">
 
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-535Q238L');</script>
+<!-- Google Tag Manager (carregamento adiado: idle/interação do usuário, com limite de 3.5s, para não bloquear o carregamento inicial) -->
+<script>
+(function(w,d,s,l,i){
+  w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+  function loadGTM(){
+    if (w.__gtmLoaded) return;
+    w.__gtmLoaded = true;
+    var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  }
+  var events = ['scroll','mousemove','touchstart','keydown','click'];
+  function onInteract(){ events.forEach(function(e){ w.removeEventListener(e, onInteract); }); loadGTM(); }
+  events.forEach(function(e){ w.addEventListener(e, onInteract, {passive:true, once:true}); });
+  setTimeout(loadGTM, 3500);
+})(window,document,'script','dataLayer','GTM-535Q238L');
+</script>
 <!-- End Google Tag Manager -->
 <script type="application/ld+json">
 {
@@ -367,7 +379,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>Foi desse ponto que a Trinca Pay surgiu. Da necessidade de criar uma solução simples, clara e justa para organizar como o dinheiro das vendas entra, sem promessa, sem promoção enganosa e sem surpresa depois. É por isso que a Trinca Pay não vende só máquina nem taxa. Ela entrega clareza, organização e parceria para que o dinheiro das vendas sustente, de verdade, o crescimento do negócio.</p>
       </div>
       <div class="founder-photo">
-        <img src="/assets/images/renan-oliveira-fundador.jpg" alt="Renan Oliveira, fundador da Trinca Pay" width="853" height="1280" loading="lazy" title="Renan Oliveira, fundador da Trinca Pay">
+        <img src="/assets/images/renan-oliveira-fundador.webp" alt="Renan Oliveira, fundador da Trinca Pay" width="853" height="1280" loading="lazy" title="Renan Oliveira, fundador da Trinca Pay">
       </div>
     </div>
   </section>
