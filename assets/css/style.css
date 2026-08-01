@@ -554,7 +554,7 @@ section { padding: 80px 0; }
 .page-home main > section:nth-of-type(4) > .container > h2 { font-size: 35px; font-weight: 600; color: #fff; line-height: 45.5px; }
 .page-home main > section:nth-of-type(4) .step-list + p,
 .page-home main > section:nth-of-type(4) > .container > h2 ~ p { font-size: 18px; font-weight: 500; color: #fff; line-height: 27px; }
-.page-home main > section:nth-of-type(4) .step-row .step-num { font-size: 24px; font-weight: 700; color: #fff; line-height: 55.2px; }
+.page-home main > section:nth-of-type(4) .step-row .step-num { font-size: 24px; font-weight: 700; color: var(--color-accent); line-height: 55.2px; }
 .page-home main > section:nth-of-type(4) .step-row h3 { font-size: 21px; font-weight: 600; color: #fff; line-height: 27.3px; }
 .page-home main > section:nth-of-type(4) .step-row p { font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; }
 .page-home main > section:nth-of-type(4) .step-row { border-bottom-color: rgba(255,255,255,1); }
