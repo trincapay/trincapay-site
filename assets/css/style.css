@@ -222,6 +222,8 @@ section { padding: 80px 0; }
 @media (max-width: 860px) {
   .grid-2 { grid-template-columns: 1fr; gap: 48px; }
   .grid-2.reverse-mobile { display: flex; flex-direction: column-reverse; }
+  .como-funciona-block { text-align: center; }
+  .como-funciona-block .como-funciona-btn { justify-content: center; }
 }
 
 .text-center { text-align: center; }
