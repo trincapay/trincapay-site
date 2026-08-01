@@ -10,6 +10,7 @@
 :root {
   --color-bg-dark: #335063;       /* fundo petróleo - header, hero, seções escuras */
   --color-bg-dark-card: #4a6d84;  /* cartões sobre fundo escuro (levemente mais claro) */
+  --color-bg-panel-blue: rgb(116, 152, 176); /* azul claro da seção "A regra..." (igual produção) */
   --color-accent: #4FEC69;        /* verde destaque - títulos, botões, links */
   --color-white: #ffffff;
   --color-text-on-dark: #ffffff;
@@ -194,7 +195,8 @@ p { margin: 0 0 18px; font-size: 1rem; }
 }
 .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(79,236,105,0.35); }
 .btn-cta .btn-sub { display: block; font-weight: 500; font-size: 0.85rem; opacity: 0.85; }
-.btn-cta .btn-icon { font-size: 0.85em; }
+.btn-cta .btn-icon { font-size: 0.85em; display: inline-flex; align-items: center; }
+.btn-cta .btn-icon svg { display: block; }
 .btn-cta img.btn-icon { width: 18px; height: 18px; }
 .btn-wrap { text-align: center; margin: 32px 0; }
 .btn-wrap.align-left { text-align: left; }
@@ -246,14 +248,15 @@ section { padding: 80px 0; }
 @media (max-width: 860px) { .card-grid-3 { grid-template-columns: 1fr; } }
 
 .feature-card {
-  background: var(--color-bg-dark-card);
-  border: 1px solid rgba(255,255,255,0.15);
-  border-radius: var(--radius-card);
+  background: var(--color-bg-panel-blue);
+  border: none;
+  border-radius: 20px;
   padding: 28px 26px;
   text-align: center;
 }
-.feature-card h3 { color: var(--color-accent); font-size: 1.05rem; margin-bottom: 14px; }
-.feature-card p { color: var(--color-white); font-size: 0.95rem; margin: 0; opacity: 0.92; }
+.feature-card h3 { color: var(--color-white); font-size: 21px; font-weight: 700; margin-bottom: 14px; }
+.feature-card h3 a { color: inherit; text-decoration: none; }
+.feature-card p { color: var(--color-white); font-size: 16px; margin: 0; opacity: 1; }
 .feature-card .icon { font-size: 1.5rem; margin-right: 8px; }
 
 .feature-card-alt {
@@ -542,9 +545,10 @@ section { padding: 80px 0; }
 .page-home main > section:nth-of-type(3) h2[style*="margin-top"] { font-size: 35px; font-weight: 600; color: #fff; line-height: 45.5px; }
 .page-home main > section:nth-of-type(3) .step-list + p,
 .page-home main > section:nth-of-type(3) > .container > h2[style*="margin-top"] ~ p { font-size: 18px; font-weight: 500; color: #fff; line-height: 27px; }
-.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 400; color: #fff; line-height: 55.2px; }
+.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 700; color: #fff; line-height: 55.2px; }
 .page-home main > section:nth-of-type(3) .step-row h3 { font-size: 21px; font-weight: 600; color: var(--color-text-on-light); line-height: 27.3px; }
 .page-home main > section:nth-of-type(3) .step-row p { font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; }
+.page-home main > section:nth-of-type(3) .step-row { border-bottom-color: rgba(255,255,255,1); }
 .page-home main > section:nth-of-type(3) p[style*="margin-top:32px"] { font-size: 18px; font-weight: 400; color: var(--color-text-on-light); line-height: 23.4px; }
 
 /* 4) PARA QUEM */
@@ -565,12 +569,12 @@ section { padding: 80px 0; }
 .page-home main > section:nth-of-type(7) p { font-size: 18px; font-weight: 400; color: #fff; line-height: 27px; }
 
 /* 8) FAQ */
-.page-home main > section:nth-of-type(8) > .container.text-center > h2 { font-size: 40px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 52px; }
-.page-home main > section:nth-of-type(8) .faq-item summary { font-size: 21.06px; font-weight: 500; color: var(--color-text-alt-dark); line-height: 31.59px; }
+.page-home main > section:nth-of-type(8) > .container.text-center > h2 { font-size: 30px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 39px; }
+.page-home main > section:nth-of-type(8) .faq-item summary { font-size: 18px; font-weight: 500; color: var(--color-text-alt-dark); line-height: 27px; }
 .page-home main > section:nth-of-type(8) .faq-item p { font-size: 16px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 20.8px; }
 
 /* 9) CTA FINAL */
-.page-home main > section:nth-of-type(9) h2 { font-size: 54px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 70.2px; }
+.page-home main > section:nth-of-type(9) h2 { font-size: 36px; font-weight: 600; color: var(--color-text-alt-dark); line-height: 46.8px; }
 .page-home main > section:nth-of-type(9) p { font-size: 18px; font-weight: 400; color: var(--color-text-alt-dark); line-height: 27px; }
 
 /* FOOTER (todas as páginas) */
