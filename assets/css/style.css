@@ -343,7 +343,7 @@ section { padding: 80px 0; }
 /* ============ Footer ============ */
 .site-footer-wrap {
   background: var(--color-alt-bg);
-  padding: 72px 0 32px;
+  padding: 72px 0 10px;
 }
 .site-footer {
   background: var(--color-bg-dark);
@@ -387,6 +387,8 @@ section { padding: 80px 0; }
   color: var(--color-text-on-light);
   opacity: 0.75;
   padding-top: 28px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 /* ============ Contact form ============ */
@@ -542,16 +544,17 @@ section { padding: 80px 0; }
 
 /* 3) A REGRA + CARDS + COMO FUNCIONA */
 .page-home main > section:nth-of-type(3) > .container > h2:first-child { font-size: 35px; font-weight: 600; color: var(--color-text-on-light); line-height: 45.5px; }
-.page-home main > section:nth-of-type(3) > .container > p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
-.page-home main > section:nth-of-type(3) .feature-card h3 { font-size: 21px; font-weight: 700; color: #fff; line-height: 27.3px; }
-.page-home main > section:nth-of-type(3) .feature-card p { font-size: 16px; font-weight: 400; color: #fff; line-height: 20.8px; }
-.page-home main > section:nth-of-type(3) h2[style*="margin-top"] { font-size: 35px; font-weight: 600; color: #fff; line-height: 45.5px; }
+.page-home main > section:nth-of-type(3) > .container > p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(3) .feature-card { background: #fff; box-shadow: 0 4px 16px rgba(51,80,99,0.08); }
+.page-home main > section:nth-of-type(3) .feature-card h3 { font-size: 21px; font-weight: 700; color: var(--color-text-on-light); line-height: 27.3px; }
+.page-home main > section:nth-of-type(3) .feature-card p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 20.8px; }
+.page-home main > section:nth-of-type(3) h2[style*="margin-top"] { font-size: 35px; font-weight: 600; color: var(--color-text-on-light); line-height: 45.5px; }
 .page-home main > section:nth-of-type(3) .step-list + p,
-.page-home main > section:nth-of-type(3) > .container > h2[style*="margin-top"] ~ p { font-size: 18px; font-weight: 500; color: #fff; line-height: 27px; }
-.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 700; color: #fff; line-height: 55.2px; }
+.page-home main > section:nth-of-type(3) > .container > h2[style*="margin-top"] ~ p { font-size: 18px; font-weight: 500; color: var(--color-text-on-light); line-height: 27px; }
+.page-home main > section:nth-of-type(3) .step-row .step-num { font-size: 24px; font-weight: 700; color: var(--color-text-on-light); line-height: 55.2px; }
 .page-home main > section:nth-of-type(3) .step-row h3 { font-size: 21px; font-weight: 600; color: var(--color-text-on-light); line-height: 27.3px; }
-.page-home main > section:nth-of-type(3) .step-row p { font-size: 16px; font-weight: 400; color: #fff; line-height: 24px; }
-.page-home main > section:nth-of-type(3) .step-row { border-bottom-color: rgba(255,255,255,1); }
+.page-home main > section:nth-of-type(3) .step-row p { font-size: 16px; font-weight: 400; color: var(--color-text-on-light); line-height: 24px; }
+.page-home main > section:nth-of-type(3) .step-row { border-bottom-color: rgba(51,80,99,0.2); }
 .page-home main > section:nth-of-type(3) p[style*="margin-top:32px"] { font-size: 18px; font-weight: 400; color: var(--color-text-on-light); line-height: 23.4px; }
 
 /* 4) PARA QUEM */
