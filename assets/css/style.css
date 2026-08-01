@@ -502,6 +502,15 @@ section { padding: 80px 0; }
 .btn-submit:hover { background: #06355f; }
 
 /* ============ Influencer landing ============ */
+.offer-ribbon {
+  background: var(--color-accent);
+  color: var(--color-text-on-light);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+.offer-ribbon strong { font-weight: 700; }
 .offer-badge {
   display: inline-block;
   background: rgba(255,255,255,0.1);
@@ -514,7 +523,8 @@ section { padding: 80px 0; }
 .price-box {
   margin: 20px 0;
 }
-.price-box .price-main { font-family: var(--font-heading); font-weight: 700; font-size: 1.6rem; }
+.price-box .price-main { font-family: var(--font-heading); font-weight: 700; font-size: 32px; }
+.price-box .price-main .accent { color: var(--color-accent); }
 .coupon-box {
   display: inline-block;
   border: 2px dashed var(--color-accent);
@@ -527,6 +537,18 @@ section { padding: 80px 0; }
 .benefit-list { list-style: none; margin: 24px 0; padding: 0; }
 .benefit-list li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.15); }
 .benefit-list li::before { content: "✓ "; color: var(--color-accent); font-weight: 700; }
+.benefit-list-light li { border-bottom-color: rgba(51,80,99,0.12); color: var(--color-text-on-light); }
+
+.btn-icon-play { display: inline-block; color: var(--color-text-on-light); margin-right: 4px; }
+
+.card-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin: 40px 0;
+}
+@media (max-width: 860px) { .card-grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .card-grid-4 { grid-template-columns: 1fr; } }
 
 /* ============ Mobile nav ============ */
 /* Entre ~481-720px: nada encolhe; o container quebra e o botão
