@@ -284,9 +284,8 @@ section { padding: 80px 0; }
 .audience-row {
   padding: 64px 0;
 }
-.audience-row[style*="background"] {
+.container.audience-row[style*="background"] {
   padding: 48px !important;
-  border-radius: 24px;
 }
 .audience-row .photo-strip img { border-radius: var(--radius-card); max-width: min(400px, 100%); margin: 0 auto; }
 .accent-link { color: var(--color-accent); font-weight: 600; }
