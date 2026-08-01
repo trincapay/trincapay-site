@@ -30,6 +30,10 @@
       pushEvent({ event: 'area_cliente_click', cta_label: label });
       return;
     }
+    if (el.classList.contains('whatsapp-float')) {
+      pushEvent({ event: 'whatsapp_float_click', cta_label: label || 'Botão flutuante WhatsApp' });
+      return;
+    }
     if (href.indexOf('wa.me') !== -1) {
       pushEvent({ event: 'whatsapp_click', cta_label: label, cta_location: ctaLocation(el) });
       return;
