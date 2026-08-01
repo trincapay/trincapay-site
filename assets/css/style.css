@@ -263,6 +263,55 @@ section { padding: 80px 0; }
   background: rgba(255,255,255,0.06);
 }
 
+/* Card escuro com icone ">>" (paineis "Estrutura de pagamentos") */
+.feature-card-chevron {
+  background: var(--color-text-on-light);
+  border-radius: 20px;
+  padding: 32px;
+  text-align: left;
+}
+.feature-card-chevron .chevron-icon {
+  display: block;
+  color: var(--color-accent);
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 12px;
+  letter-spacing: -2px;
+}
+.feature-card-chevron p { color: #fff; font-size: 16px; margin: 0; }
+
+/* Pills com checkmark (painel "Para quem faz sentido") */
+.benefit-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 32px 0;
+}
+.benefit-pill {
+  background: var(--color-alt-bg);
+  border-radius: 20px;
+  padding: 20px 18px;
+  max-width: 220px;
+  text-align: center;
+  color: var(--color-text-on-light);
+  font-weight: 600;
+  font-size: 15px;
+}
+.benefit-pill .check-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0 auto 10px;
+}
+
 /* ============ Numbered steps ============ */
 .step-list { margin-top: 32px; }
 .step-row {
